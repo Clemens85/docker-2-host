@@ -18,8 +18,10 @@ This creates the Docker Images (and JAR artefacts) for both `service-a` and `ser
 ## Run
 
 There are three scenarios of how to run both services. 
-No matter which scenario is run, both services can always be accessed in your browser by
-```http://localhost:9999/serviceA``` (ServiceA)<br/>
+No matter which scenario is run, both services can always be accessed in your browser by:
+
+```http://localhost:9999/serviceA``` (ServiceA)
+
 ```http://localhost:7777/serviceB/call-service-a``` (ServiceB which requests also an endpoint of ServiceA)
 
 

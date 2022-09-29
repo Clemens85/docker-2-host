@@ -3,12 +3,11 @@ version: '3'
 services:
 
   service-b:
-    build: ../service-b
+    image: service-b
     container_name: service-b
     ports:
       - "7777:7777"
     environment:
       - service_a.host=http://service-a:9999
-      # - service_a.host=http://localhost:9999
     extra_hosts:
       - "service-a:${DOCKER_HOST_IP}"

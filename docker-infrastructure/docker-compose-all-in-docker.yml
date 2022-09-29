@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  service-a:
+    image: service-a
+    container_name: service-a
+    ports:
+      - "9999:9999"
+
+  service-b:
+    image: service-b
+    container_name: service-b
+    ports:
+      - "7777:7777"
+    environment:
+      - service_a.host=http://service-a:9999
